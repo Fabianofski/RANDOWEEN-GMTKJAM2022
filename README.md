@@ -3,19 +3,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This game will be made for the [GMTK Jam 2022](https://itch.io/jam/gmtk-jam-2022) hosted by Game Makers Toolkit. 
 
 ### Built With
 
-[![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=flat&logo=unity)](https://unity3d.com)
+![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
+![Aseprite](https://img.shields.io/badge/Aseprite-FFFFFF?style=for-the-badge&logo=Aseprite&logoColor=#7D929E)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-If you want to try out the game you can play it in web or download it for Mac, Windows or Linux right here:
-"Insert Link"
+If you want to try out the game you can play it in web or download it for Mac, Windows or Linux right here:  
+![Itch.io](https://img.shields.io/badge/Itch-%23FF0B34.svg?style=for-the-badge&logo=Itch.io&logoColor=white&url=https%3A%2F%2Ftwitter.com%2FF4B1_GameDev)
 
 To open the project do the following:
 1. Install Unity Hub from here: [https://unity.com/download](https://unity.com/download)
@@ -34,8 +33,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-F4B1 - [@twitter_handle](https://twitter.com/F4B1_GameDev)
-Santumerino - [@twitter_handle](https://twitter.com/santumerino)
+![Twitter URL](https://img.shields.io/twitter/url?label=F4B1&style=social&url=https%3A%2F%2Ftwitter.com%2FF4B1_GameDev)
+![Twitter URL](https://img.shields.io/twitter/url?label=santumerino&style=social&url=https%3A%2F%2Ftwitter.com%2Fsantumerino)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
