@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Intensity: 1.86
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000f754a50575d004a169bbfa936b909d2089421f58
+  m_ApplyToSortingLayers: 00000000f754a50575d004a16b909d20918aa492
   m_LightCookieSprite: {fileID: 1544461279, guid: 9c8cbcff9a808ca419ae1152f8c4083f, type: 3}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -120,8 +120,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1307306908918312529}
   - component: {fileID: 1307306908918312530}
-  - component: {fileID: 1307306908918312531}
-  m_Layer: 0
+  - component: {fileID: 8871904049472198190}
+  - component: {fileID: 8256719156185511737}
+  m_Layer: 6
   m_Name: Ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +197,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &1307306908918312531
+--- !u!114 &8871904049472198190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,12 +206,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1307306908918312535}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbe5e811fc83c1449956e1ac77dff1ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 95c50e4d8d49461f86b59354a147b1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 1
   playerHealth: {fileID: 11400000, guid: b507e89037b155042b80810386114f09, type: 2}
+  health: 20
   lookUp: {fileID: 1544461279, guid: 9c8cbcff9a808ca419ae1152f8c4083f, type: 3}
   lookDown: {fileID: -490009650, guid: 9c8cbcff9a808ca419ae1152f8c4083f, type: 3}
   lookRight: {fileID: -2074772926, guid: 9c8cbcff9a808ca419ae1152f8c4083f, type: 3}
   lookLeft: {fileID: 765407642, guid: 9c8cbcff9a808ca419ae1152f8c4083f, type: 3}
+--- !u!61 &8256719156185511737
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307306908918312535}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.39374995}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.2}
+    oldSize: {x: 1, y: 1.3125}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.3125}
+  m_EdgeRadius: 0

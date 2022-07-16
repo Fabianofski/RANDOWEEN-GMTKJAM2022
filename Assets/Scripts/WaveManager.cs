@@ -22,6 +22,6 @@ public class WaveManager : MonoBehaviour
 
     public void StartNextWave()
     {
-        enemySpawner.StartSpawningEnemies(1, .5f);
+        enemySpawner.StartSpawningEnemies(3, .5f);
     }
 }

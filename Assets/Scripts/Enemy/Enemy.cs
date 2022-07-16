@@ -10,7 +10,8 @@ namespace Enemy
         private Path path;
         [SerializeField] protected float speed = 1f;
         [SerializeField] private IntVariable playerHealth;
-
+        [SerializeField] private float health;
+            
         [Header("Sprites")] 
         private Vector2 moveDirection;
         private SpriteRenderer spriteRenderer;
@@ -22,7 +23,7 @@ namespace Enemy
         private int index;
         private bool reachedEnd;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
@@ -31,8 +32,14 @@ namespace Enemy
         {
             path = value;
         }
+
+        public void DealDamage(float damage)
+        {
+            health -= damage;
+            if(health <= 0) Destroy(gameObject);
+        }
         
-        private void Update()
+        protected virtual void Update()
         {
             MoveAlongPath();
             DisplayCorrectSprite();
