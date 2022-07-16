@@ -6,9 +6,18 @@
             "id": "d5582532-af4e-4c14-ae62-78c2031f6a15",
             "actions": [
                 {
-                    "name": "Spawn",
+                    "name": "MousePositionChanged",
+                    "type": "Value",
+                    "id": "753bcf6d-4766-47fc-aa51-cc561d391a55",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseClick",
                     "type": "Button",
-                    "id": "e51f82aa-c8fb-4a65-805d-936578932b09",
+                    "id": "a2fa61c0-39df-464f-9669-bdeeebcb1ea8",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press",
@@ -18,12 +27,23 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "978bfe49-cc26-4a3d-ab7b-7d7a29327403",
-                    "path": "<Keyboard>/space",
+                    "id": "c8a1be7d-3105-4da1-b01b-fea40ad86c2c",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Spawn",
+                    "groups": "",
+                    "action": "MousePositionChanged",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "efc3e2b9-36bd-4e14-8625-53c7bfb231c8",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

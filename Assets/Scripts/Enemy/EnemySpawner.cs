@@ -7,41 +7,54 @@ namespace Enemy
     using UnityEngine;
     public class EnemySpawner : MonoBehaviour
     {
-        private Queue<GameObject> enemiesThisWave;
-        [SerializeField] private GameObject dummyEnemy;
+        private Queue<GameObject> enemyQueue;
         [SerializeField] private Path path;
+        private float spawnRate;
+        private float fluctuation;
+        private float counter;
+        private bool waveIsStarted;
 
         private void Awake()
         {
-            enemiesThisWave = new Queue<GameObject>();
-
-            List<GameObject> enemies = new List<GameObject>();
-            for (int i = 0; i < 10; i++)
-            {
-                enemies.Add(dummyEnemy);
-            }
-
-            AddEnemies(enemies);
+            enemyQueue = new Queue<GameObject>();
         }
 
         public void AddEnemies(List<GameObject> enemies)
         {
             foreach (GameObject enemy in enemies)
-                enemiesThisWave.Enqueue(enemy);
+                enemyQueue.Enqueue(enemy);
+        }
+
+        private void Update()
+        {
+            counter -= Time.deltaTime;
+
+            if (counter > 0 || !waveIsStarted) return;
+            SpawnNextEnemy();
+            counter = spawnRate + Random.Range(-fluctuation, fluctuation);
         }
 
         public void SpawnNextEnemy()
         {
-            if (enemiesThisWave.Count == 0) return;
+            if (enemyQueue.Count == 0) return;
             
-            GameObject go = Instantiate(enemiesThisWave.Dequeue(), path.GetStartingPosition(), Quaternion.identity);
+            GameObject go = Instantiate(enemyQueue.Dequeue(), path.GetStartingPosition(), Quaternion.identity);
             go.GetComponent<Enemy>().SetPath(path);
         }
 
-        public void OnSpawn()
+        public void StartSpawningEnemies(float rate, float fluct)
         {
-            SpawnNextEnemy();
+            spawnRate = rate;
+            fluctuation = fluct;
+            waveIsStarted = true;
+            
+            counter = spawnRate + Random.Range(-fluctuation, fluctuation);
         }
-        
+
+        public void StopSpawningEnemies()
+        {
+            waveIsStarted = false;
+            enemyQueue.Clear();
+        }
     }
 }
