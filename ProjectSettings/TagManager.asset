@@ -53,3 +53,6 @@ TagManager:
   - name: Fog
     uniqueID: 2460256913
     locked: 0
+  - name: WorldUI
+    uniqueID: 1162291807
+    locked: 0

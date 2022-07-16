@@ -212,6 +212,7 @@ MonoBehaviour:
   speed: 1
   playerHealth: {fileID: 11400000, guid: b507e89037b155042b80810386114f09, type: 2}
   health: 20
+  healthBar: {fileID: 1610778595594245142, guid: 5883f76729aff8c4585522e71ca1892f, type: 3}
   lookUp: {fileID: 1544461279, guid: 9c8cbcff9a808ca419ae1152f8c4083f, type: 3}
   lookDown: {fileID: -490009650, guid: 9c8cbcff9a808ca419ae1152f8c4083f, type: 3}
   lookRight: {fileID: -2074772926, guid: 9c8cbcff9a808ca419ae1152f8c4083f, type: 3}

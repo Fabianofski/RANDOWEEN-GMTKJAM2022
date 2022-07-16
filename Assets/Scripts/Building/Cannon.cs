@@ -14,19 +14,26 @@ namespace Building
         [SerializeField] private float damage;
         [SerializeField] private float fireRate;
         [SerializeField] private LayerMask enemyLayer;
+        
 
         private float counter;
         private float shootDir;
-        private int upgradeLevel;
+
+        [SerializeField] private GameObject lastUpgrade;
+        [SerializeField] private GameObject nextUpgrade;
         
         public void Upgrade()
         {
-            throw new System.NotImplementedException();
+            if (nextUpgrade == null) return;
+            nextUpgrade.SetActive(true);
+            gameObject.SetActive(false);
         }
 
         public void Downgrade()
         {
-            throw new System.NotImplementedException();
+            if (lastUpgrade == null) return;
+            lastUpgrade.SetActive(true);
+            gameObject.SetActive(false);
         }
 
         private void Update()
@@ -59,7 +66,7 @@ namespace Building
             }
         }
         
-        private void OnDrawGizmos()
+        private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, radius);

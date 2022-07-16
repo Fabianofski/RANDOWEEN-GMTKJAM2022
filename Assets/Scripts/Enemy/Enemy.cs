@@ -11,7 +11,9 @@ namespace Enemy
         [SerializeField] protected float speed = 1f;
         [SerializeField] private IntVariable playerHealth;
         [SerializeField] private float health;
-            
+        [SerializeField] private GameObject healthBar;
+        private UIHealth uiHealth;
+        
         [Header("Sprites")] 
         private Vector2 moveDirection;
         private SpriteRenderer spriteRenderer;
@@ -26,6 +28,9 @@ namespace Enemy
         protected virtual void Awake()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
+            GameObject bar = Instantiate(healthBar, transform.position + new Vector3(0, 1.5f, 0), Quaternion.identity, transform);
+            uiHealth = bar.GetComponentInChildren<UIHealth>();
+            uiHealth.SetMaxHealth(Mathf.RoundToInt(health));
         }
 
         public void SetPath(Path value)
@@ -36,11 +41,14 @@ namespace Enemy
         public void DealDamage(float damage)
         {
             health -= damage;
+            uiHealth.SetHealth(Mathf.RoundToInt(health));
             if(health <= 0) Destroy(gameObject);
         }
         
         protected virtual void Update()
         {
+            if (path == null) return;
+            
             MoveAlongPath();
             DisplayCorrectSprite();
         }
