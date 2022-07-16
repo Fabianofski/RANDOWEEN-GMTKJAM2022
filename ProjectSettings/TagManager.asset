@@ -47,12 +47,9 @@ TagManager:
   - name: Decoration
     uniqueID: 2701447285
     locked: 0
-  - name: Enemies
-    uniqueID: 2482682729
-    locked: 0
-  - name: Buildings
+  - name: GameField
     uniqueID: 547197035
     locked: 0
-  - name: EnemyGoal
-    uniqueID: 1478443657
+  - name: Fog
+    uniqueID: 2460256913
     locked: 0

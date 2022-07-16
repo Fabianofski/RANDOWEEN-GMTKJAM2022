@@ -15,7 +15,7 @@ public class BuildingManager : MonoBehaviour
     
     public void OnMouseClick()
     {
-        if (selectedBuilding == null) return;
+        if (selectedBuilding.Value == null) return;
         
         Debug.Log("Click: " + worldMousePos);
         Vector2 tilePos = new Vector2(Mathf.RoundToInt(worldMousePos.x), Mathf.RoundToInt(worldMousePos.y) -.5f);
