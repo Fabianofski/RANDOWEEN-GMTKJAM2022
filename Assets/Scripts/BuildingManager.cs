@@ -18,7 +18,7 @@ public class BuildingManager : MonoBehaviour
         if (selectedBuilding == null) return;
         
         Debug.Log("Click: " + worldMousePos);
-        Vector2 tilePos = new Vector2((int)worldMousePos.x, (int)worldMousePos.y);
+        Vector2 tilePos = new Vector2(Mathf.RoundToInt(worldMousePos.x), Mathf.RoundToInt(worldMousePos.y) -.5f);
         
         Instantiate(selectedBuilding.Value, tilePos, Quaternion.identity);
         itemGotPlaced.Raise();
