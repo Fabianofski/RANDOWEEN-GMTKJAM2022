@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139958154988118327}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Output1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139958155007897274}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Outputs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958155107567414}
   - component: {fileID: 8139958155107567415}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CannonLvl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139958155154766041}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Outputs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958155384980699}
   - component: {fileID: 8139958155384980692}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139958155416040406}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Output1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958155431695755}
   - component: {fileID: 8139958155431695748}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139958155498365203}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Output1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139958155552995566}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Output1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958155598318746}
   - component: {fileID: 8139958155598318747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958155644246617}
   - component: {fileID: 8139958155644246618}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139958155652386279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Output1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +627,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958155662863574}
   - component: {fileID: 8139958155662863575}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958155690381323}
   - component: {fileID: 2011399073650936747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,7 +773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958155883263722}
   - component: {fileID: 8139958155883263723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -857,7 +857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958155952056639}
   - component: {fileID: 8139958155952056632}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CannonLvl3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -916,7 +916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139958156171648643}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Output1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -947,7 +947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139958156560661296}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Outputs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -981,7 +981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139958156825300097}
   - component: {fileID: 8139958156825300098}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CannonLvl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

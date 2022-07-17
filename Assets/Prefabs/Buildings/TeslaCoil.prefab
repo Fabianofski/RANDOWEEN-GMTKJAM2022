@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2497566476390739483}
   - component: {fileID: 2497566476390739484}
   - component: {fileID: 2497566476390739485}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeslaCoilLvl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2497566476427545806}
   - component: {fileID: 4303124961678970178}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeslaCoil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 2497566476770387886}
   - component: {fileID: 2497566476770387885}
   - component: {fileID: 2497566476770387884}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeslaCoilLvl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 2497566477216986325}
   - component: {fileID: 2497566477216986327}
   - component: {fileID: 2497566477216986326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeslaCoilLvl3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,6 +399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beam3
       objectReference: {fileID: 0}
+    - target: {fileID: 953898024604598808, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 953898024604598822, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -469,6 +473,10 @@ PrefabInstance:
     - target: {fileID: 953898024604598808, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
       propertyPath: m_Name
       value: Beam2
+      objectReference: {fileID: 0}
+    - target: {fileID: 953898024604598808, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 953898024604598822, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -541,6 +549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beam2
       objectReference: {fileID: 0}
+    - target: {fileID: 953898024604598808, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 953898024604598822, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -612,6 +624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beam1
       objectReference: {fileID: 0}
+    - target: {fileID: 953898024604598808, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 953898024604598822, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -682,6 +698,10 @@ PrefabInstance:
     - target: {fileID: 953898024604598808, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
       propertyPath: m_Name
       value: Beam1
+      objectReference: {fileID: 0}
+    - target: {fileID: 953898024604598808, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 953898024604598822, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -757,6 +777,10 @@ PrefabInstance:
     - target: {fileID: 953898024604598808, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
       propertyPath: m_Name
       value: Beam1
+      objectReference: {fileID: 0}
+    - target: {fileID: 953898024604598808, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 953898024604598823, guid: 09a5678bb08d6fa4b81878f72d24e110, type: 3}
       propertyPath: m_RootOrder

@@ -2581,6 +2581,9 @@ MonoBehaviour:
   upgradeState: {fileID: 11400000, guid: 2bffa028936c1a34182b068311068251, type: 2}
   itemGotPlaced: {fileID: 11400000, guid: ec5cdd4c1ccc6794eadf0d5f35d4ad9e, type: 2}
   tilemap: {fileID: 502084616}
+  buildingLayer:
+    serializedVersion: 2
+    m_Bits: 128
   UpgradesLeft: {fileID: 11400000, guid: 455f9ee4739b0a245a215b43cf02cc9d, type: 2}
   DowngradesLeft: {fileID: 11400000, guid: 178d8e7ffcad12645ba16a0dc694d665, type: 2}
 --- !u!114 &5490535563091680364
