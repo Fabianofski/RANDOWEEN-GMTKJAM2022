@@ -1,0 +1,10 @@
+click2.ogg for most UI buttons
+dieThrow2.ogg for "re-roll" buttons
+impactMetal_medium_004.ogg for cannon bullets
+impactPlank_medium_004.ogg for enemy hit
+
+all of the above sounds by kenney (LEGEND)
+
+laser.wav for laser
+
+made by me :)
