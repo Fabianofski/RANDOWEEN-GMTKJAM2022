@@ -24,8 +24,14 @@ namespace Enemy
         [SerializeField] private Sprite lookRight;
         [SerializeField] private Sprite lookLeft;
 
+        private Animator animator;
+        [SerializeField] private float specialAttackTime;
+        [SerializeField] private bool hasSpecial;
+        private float specialCounter;
+
         private int index;
         private bool reachedEnd;
+        private bool doingSpecial;
 
         private void Awake()
         {
@@ -33,6 +39,8 @@ namespace Enemy
             GameObject bar = Instantiate(healthBar, transform.position + new Vector3(0, 1.5f, 0), Quaternion.identity, transform);
             uiHealth = bar.GetComponentInChildren<UIHealth>();
             uiHealth.SetMaxHealth(Mathf.RoundToInt(health));
+            animator = GetComponentInChildren<Animator>();
+            specialCounter = specialAttackTime;
         }
 
         public virtual void SetPath(Path value)
@@ -55,14 +63,29 @@ namespace Enemy
                 Destroy(gameObject);
             }
         }
+
+        private void StartSpecialAttack()
+        {
+            doingSpecial = true;
+            if(useAnimator) animator.SetTrigger("SpecialAttack");
+        }
+
+        public virtual void PerformSpecialAttack()
+        {
+            specialCounter = specialAttackTime;
+            doingSpecial = false;
+        }
         
         protected virtual void Update()
         {
-            if (path == null) return;
+            specialCounter -= Time.deltaTime;
+            if(specialCounter <= 0 && !doingSpecial && hasSpecial) StartSpecialAttack();
+            
+            if (path == null || doingSpecial) return;
             
             MoveAlongPath();
-            if(!useAnimator)
-                DisplayCorrectSprite();
+            if (!useAnimator) DisplayCorrectSprite();
+            else DisplayCorrectAnimation();
         }
 
         private void MoveAlongPath()
@@ -94,6 +117,13 @@ namespace Enemy
                 spriteRenderer.sprite = moveDirection.x > 0 ? lookRight : lookLeft;
             else
                 spriteRenderer.sprite = moveDirection.y > 0 ? lookUp : lookDown;
+        }
+
+        private void DisplayCorrectAnimation()
+        {
+            moveDirection = path.GetNextPosition(index) - (Vector2) transform.position;
+            animator.SetFloat("horizontal", moveDirection.x);
+            animator.SetFloat("vertical", moveDirection.y);
         }
     }
 }

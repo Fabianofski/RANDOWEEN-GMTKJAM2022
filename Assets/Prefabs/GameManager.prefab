@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 9b9d2df94fdf15e449ee3a2c23dae3b2, type: 2}
+  rerollAvailable: {fileID: 11400000, guid: feddb8313be436f45a5dbd0cbb392e78, type: 2}
   buildings:
   - amount: {fileID: 11400000, guid: 85ce8f452a7c5ed4f85ccf290961143e, type: 2}
     maxAmount: {fileID: 11400000, guid: 8212be2c2263f63409c2b3b325606321, type: 2}

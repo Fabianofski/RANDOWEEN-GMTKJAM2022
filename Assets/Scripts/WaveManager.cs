@@ -31,10 +31,24 @@ public class WaveManager : MonoBehaviour
         foreach (GameManager.Placeable placeable in enemies)
             for (int i = 0; i < placeable.amount.Value; i++)
                 added.Add(placeable.instance);
+        Shuffle(added);
         enemySpawner.AddEnemies(added);
         
         lastEnemyDied.Value = false;
         enemiesToBeKilled = enemySpawner.QueueLength();
         enemySpawner.StartSpawningEnemies(3, .5f);
+    }
+    
+    public void Shuffle<T>(IList<T> list)
+    {
+        System.Random random = new System.Random();
+        int n = list.Count;  
+        while (n > 1) {  
+            n--;  
+            int k = random.Next(n + 1);  
+            T value = list[k];  
+            list[k] = list[n];  
+            list[n] = value;  
+        }  
     }
 }

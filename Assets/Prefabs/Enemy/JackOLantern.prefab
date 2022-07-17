@@ -267,10 +267,12 @@ MonoBehaviour:
   health: 20
   healthBar: {fileID: 1610778595594245142, guid: 5883f76729aff8c4585522e71ca1892f, type: 3}
   enemyDied: {fileID: 11400000, guid: ebd8ce3225c9877408673cb58af57229, type: 2}
+  useAnimator: 0
   lookUp: {fileID: 130401994, guid: b119d03abaf82574f885a48a2be4263a, type: 3}
   lookDown: {fileID: 897355459, guid: b119d03abaf82574f885a48a2be4263a, type: 3}
   lookRight: {fileID: 2087113752, guid: b119d03abaf82574f885a48a2be4263a, type: 3}
   lookLeft: {fileID: 1818538526, guid: b119d03abaf82574f885a48a2be4263a, type: 3}
+  specialAttackTime: 5
 --- !u!61 &6505039715971057119
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -10,10 +10,11 @@ public class GameManager : MonoBehaviour
 {
 
     [SerializeField] private BoolVariable gameOver;
+    [SerializeField] private BoolVariable rerollAvailable;
     [SerializeField] private List<RandomObjects> buildings;
     [SerializeField] private List<RandomObjects> enemies;
     [SerializeField] private List<RandomObjects> upDownGrades;
-
+    
     
     
     [SerializeField] private IntVariable upgrade;
@@ -31,9 +32,10 @@ public class GameManager : MonoBehaviour
 
     public void RollNewWave()
     {
-            ReRollEnemies();
-            ReRollBuildings();
-            ReRollUpgrades();
+        rerollAvailable.Value = true;
+        ReRollEnemies();
+        ReRollBuildings();
+        ReRollUpgrades();
     }
 
     public void ReRollEnemies()
