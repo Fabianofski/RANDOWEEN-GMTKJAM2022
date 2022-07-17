@@ -4,9 +4,10 @@ namespace Enemy
 {
     public class Bat : Enemy
     {
-        protected override void Update()
+        public override void SetPath(Path value)
         {
-            base.Update();
+            base.SetPath(value);
+            SetIndex(path.GetPathLength() - 1);
         }
     }
 }

@@ -11,6 +11,11 @@ GameObject:
   - component: {fileID: 5902184584422692169}
   - component: {fileID: 5902184584422692168}
   - component: {fileID: 5902184584422692175}
+  - component: {fileID: 1057235581213894901}
+  - component: {fileID: 7884852073911801760}
+  - component: {fileID: 6251419732714584526}
+  - component: {fileID: 332137744195453428}
+  - component: {fileID: 5936820913102767385}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -46,6 +51,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 9b9d2df94fdf15e449ee3a2c23dae3b2, type: 2}
+  buildings:
+  - amount: {fileID: 11400000, guid: 85ce8f452a7c5ed4f85ccf290961143e, type: 2}
+    maxAmount: {fileID: 11400000, guid: 8212be2c2263f63409c2b3b325606321, type: 2}
+  - amount: {fileID: 11400000, guid: 774c4ab42a46c134c91abd31f5ea9e91, type: 2}
+    maxAmount: {fileID: 11400000, guid: c19d632a711e345448e8f45aecf25364, type: 2}
+  - amount: {fileID: 11400000, guid: f749369b69a0d844e942bf3d865292f5, type: 2}
+    maxAmount: {fileID: 11400000, guid: 7f943ce8fcc786f438c53a59c4c3e191, type: 2}
+  enemies:
+  - amount: {fileID: 11400000, guid: 58380a916d8c5e848bf33519a2667415, type: 2}
+    maxAmount: {fileID: 11400000, guid: d78ad6886f00a7c469b4a590467a345e, type: 2}
+  - amount: {fileID: 11400000, guid: 6300e1d1acab66d4390f0d0dcaf9cdbb, type: 2}
+    maxAmount: {fileID: 11400000, guid: be6260f9799b26049a343eed08717527, type: 2}
+  - amount: {fileID: 11400000, guid: 6b1dbc2d76d2f674fa28e4d2826b3b3d, type: 2}
+    maxAmount: {fileID: 11400000, guid: 46e916b5580ff6145b23b730912c1c20, type: 2}
+  - amount: {fileID: 11400000, guid: 6e79e7f6a9cc86b41b606d2fb23ea355, type: 2}
+    maxAmount: {fileID: 11400000, guid: 4cd6635b504488c498d5e98fe85d9357, type: 2}
+  upDownGrades:
+  - amount: {fileID: 11400000, guid: 455f9ee4739b0a245a215b43cf02cc9d, type: 2}
+    maxAmount: {fileID: 11400000, guid: 6566befb8839c2248926229bcfa99512, type: 2}
+  - amount: {fileID: 11400000, guid: 178d8e7ffcad12645ba16a0dc694d665, type: 2}
+    maxAmount: {fileID: 11400000, guid: 033d8771242cb634eaef6a758474a5f9, type: 2}
+  upgrade: {fileID: 11400000, guid: 455f9ee4739b0a245a215b43cf02cc9d, type: 2}
+  downgrade: {fileID: 11400000, guid: 178d8e7ffcad12645ba16a0dc694d665, type: 2}
+  percentage: 1
+  buildingInstances:
+  - amount: {fileID: 11400000, guid: 85ce8f452a7c5ed4f85ccf290961143e, type: 2}
+    instance: {fileID: 8139958155690381322, guid: 0b55779ed94837141b10b0c19f801c69, type: 3}
+  - amount: {fileID: 11400000, guid: 774c4ab42a46c134c91abd31f5ea9e91, type: 2}
+    instance: {fileID: 2497566476427545805, guid: 1c8a6121b8a571343a0ecb2c606d73a6, type: 3}
+  - amount: {fileID: 11400000, guid: f749369b69a0d844e942bf3d865292f5, type: 2}
+    instance: {fileID: 8139958155690381322, guid: 0b55779ed94837141b10b0c19f801c69, type: 3}
+  addToShop: {fileID: 11400000, guid: 7198cd930d48b6849824c9081d6ee2b6, type: 2}
 --- !u!114 &5902184584422692175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,3 +121,203 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+--- !u!114 &1057235581213894901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902184584422692170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5902184584422692168}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: RollNewWave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 410e9ef57ff88ae46a3a0713afbf52db, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
+--- !u!114 &7884852073911801760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902184584422692170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5902184584422692168}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ApplyWave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: dc559d09760738d45ba85a50b24d0c33, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
+--- !u!114 &6251419732714584526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902184584422692170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5902184584422692168}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReRollEnemies
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: e85e5d9bc721c06439761b1cfb2f244c, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
+--- !u!114 &332137744195453428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902184584422692170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5902184584422692168}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReRollBuildings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 3f13e546be3ee8542940c495a3a4d2ca, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
+--- !u!114 &5936820913102767385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5902184584422692170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5902184584422692168}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ReRollUpgrades
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 63d7c2a09510a524d8b51a5f08adb6f2, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}

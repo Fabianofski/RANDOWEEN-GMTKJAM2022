@@ -21,14 +21,29 @@ namespace Building
             nextUpgrade.SetActive(true);
             gameObject.SetActive(false);
         }
-
+        public bool IsUpgradeable()
+        {
+            return nextUpgrade != null;
+        }
         public void Downgrade()
         {
             if (lastUpgrade == null) return;
             lastUpgrade.SetActive(true);
             gameObject.SetActive(false);
         }
-        
+        public bool IsDowngradeable()
+        {
+            return lastUpgrade != null;
+        }
+        public void Enable()
+        {
+            this.enabled = true;
+        }
+        public void Disable()
+        {
+            this.enabled = false;
+        }
+
         private void Update()
         {
             Shoot(Physics2D.OverlapCircleAll(transform.position, radius, enemyLayer));

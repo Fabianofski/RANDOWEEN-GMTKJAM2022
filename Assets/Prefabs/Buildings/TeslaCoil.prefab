@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastUpgrade: {fileID: 0}
-  nextUpgrade: {fileID: 0}
+  nextUpgrade: {fileID: 2497566476770387883}
   beamLineRenderers:
   - {fileID: 2497566475719700809}
   radius: 5

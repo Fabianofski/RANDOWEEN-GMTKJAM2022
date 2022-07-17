@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 using Unity.Mathematics;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
@@ -21,7 +22,12 @@ namespace Building
 
         [SerializeField] private GameObject lastUpgrade;
         [SerializeField] private GameObject nextUpgrade;
-        
+
+        public bool IsUpgradeable()
+        {
+            return nextUpgrade != null;
+        }
+
         public void Upgrade()
         {
             if (nextUpgrade == null) return;
@@ -29,11 +35,25 @@ namespace Building
             gameObject.SetActive(false);
         }
 
+        public bool IsDowngradeable()
+        {
+            return lastUpgrade != null;
+        }
+
         public void Downgrade()
         {
             if (lastUpgrade == null) return;
             lastUpgrade.SetActive(true);
             gameObject.SetActive(false);
+        }
+
+        public void Enable()
+        {
+            this.enabled = true;
+        }
+        public void Disable()
+        {
+            this.enabled = false;
         }
 
         private void Update()

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3008321192322868445}
   - component: {fileID: 3008321192322868446}
   - component: {fileID: 3008321192322868418}
+  - component: {fileID: 8128389482621823480}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -47,8 +48,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 646abf77e74d43509aab04122b26a05a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dummyEnemy: {fileID: 1307306908918312535, guid: 8134994e4d602ea41b649b1487bc4234, type: 3}
-  started: 0
+  lastEnemyDied: {fileID: 11400000, guid: d1a8d366546bc2c4a944abf785e8177d, type: 2}
+  enemies:
+  - amount: {fileID: 11400000, guid: 58380a916d8c5e848bf33519a2667415, type: 2}
+    instance: {fileID: 1307306908918312535, guid: 8134994e4d602ea41b649b1487bc4234, type: 3}
+  - amount: {fileID: 11400000, guid: 6300e1d1acab66d4390f0d0dcaf9cdbb, type: 2}
+    instance: {fileID: 1999458639224970987, guid: abd29f58b3ba7b540906c5e4decd4668, type: 3}
+  - amount: {fileID: 11400000, guid: 6b1dbc2d76d2f674fa28e4d2826b3b3d, type: 2}
+    instance: {fileID: 1307306908918312535, guid: 8134994e4d602ea41b649b1487bc4234, type: 3}
+  - amount: {fileID: 11400000, guid: 6e79e7f6a9cc86b41b606d2fb23ea355, type: 2}
+    instance: {fileID: 1307306908918312535, guid: 8134994e4d602ea41b649b1487bc4234, type: 3}
 --- !u!114 &3008321192322868446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,6 +106,46 @@ MonoBehaviour:
   _eventReference:
     _usage: 0
     _event: {fileID: 11400000, guid: a089d4c3096e48647808b47fdf952128, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
+--- !u!114 &8128389482621823480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3008321192322868441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3008321192322868445}
+        m_TargetAssemblyTypeName: WaveManager, Assembly-CSharp
+        m_MethodName: EnemyDied
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: ebd8ce3225c9877408673cb58af57229, type: 2}
     _eventInstancer: {fileID: 0}
     _collection: {fileID: 0}
     _list: {fileID: 0}

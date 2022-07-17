@@ -14,10 +14,16 @@ public class ShopToggle : MonoBehaviour
 
     private void Awake()
     {
+        if(buildingType != null) SetBuildingType(buildingType);
+    }
+
+    public void SetBuildingType(GameObject go)
+    {
+        buildingType = go;
         toggle = GetComponent<Toggle>();
         toggleGroup = toggle.group;
     }
-
+    
     public void SetSelectedItem(bool selected)
     {
         if(selected)

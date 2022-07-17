@@ -19,6 +19,16 @@ namespace Enemy
             enemyQueue = new Queue<GameObject>();
         }
 
+        public bool QueueIsEmpty()
+        {
+            return enemyQueue.Count == 0;
+        }
+
+        public int QueueLength()
+        {
+            return enemyQueue.Count;
+        }
+        
         public void AddEnemies(List<GameObject> enemies)
         {
             foreach (GameObject enemy in enemies)

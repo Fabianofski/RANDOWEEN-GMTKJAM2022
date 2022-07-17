@@ -19,6 +19,11 @@ namespace Enemy
         {
             return pointList[0].position;
         }
+        
+        public int GetPathLength()
+        {
+            return pointList.Length;
+        }
     
         public Vector2 GetNextPosition(int index)
         {
