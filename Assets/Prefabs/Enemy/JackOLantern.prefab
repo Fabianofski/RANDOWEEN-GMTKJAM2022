@@ -262,9 +262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8c7ac7d5e3427eb3395adc8ecc8395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   playerHealth: {fileID: 11400000, guid: b507e89037b155042b80810386114f09, type: 2}
-  health: 20
+  health: 70
   healthBar: {fileID: 1610778595594245142, guid: 5883f76729aff8c4585522e71ca1892f, type: 3}
   enemyDied: {fileID: 11400000, guid: ebd8ce3225c9877408673cb58af57229, type: 2}
   useAnimator: 0
@@ -273,6 +273,7 @@ MonoBehaviour:
   lookRight: {fileID: 2087113752, guid: b119d03abaf82574f885a48a2be4263a, type: 3}
   lookLeft: {fileID: 1818538526, guid: b119d03abaf82574f885a48a2be4263a, type: 3}
   specialAttackTime: 5
+  hasSpecial: 0
 --- !u!61 &6505039715971057119
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -27,13 +27,17 @@ namespace Building
         }
         public void Downgrade()
         {
-            if (lastUpgrade == null) return;
+            if (lastUpgrade == null)
+            {
+                Destroy(transform.parent.gameObject);
+                return;
+            }
             lastUpgrade.SetActive(true);
             gameObject.SetActive(false);
         }
         public bool IsDowngradeable()
         {
-            return lastUpgrade != null;
+            return true;
         }
         public void Enable()
         {
@@ -42,6 +46,13 @@ namespace Building
         public void Disable()
         {
             this.enabled = false;
+        }
+
+        public int GetLevel()
+        {
+            if (lastUpgrade == null) return 1;
+            else if (nextUpgrade == null) return 3;
+            else return 2;
         }
 
         private void Update()

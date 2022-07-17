@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Building;
 using TMPro;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
@@ -11,62 +13,77 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private BoolVariable gameOver;
     [SerializeField] private BoolVariable rerollAvailable;
-    [SerializeField] private List<RandomObjects> buildings;
-    [SerializeField] private List<RandomObjects> enemies;
-    [SerializeField] private List<RandomObjects> upDownGrades;
-    
-    
-    
-    [SerializeField] private IntVariable upgrade;
-    [SerializeField] private IntVariable downgrade;
 
-    [SerializeField] private float percentage;
+    [Header("Enemies")]
+    [SerializeField] private IntVariable ghostAmount;    
+    [SerializeField] private IntVariable jackAmount;    
+    [SerializeField] private IntVariable zombieAmount;    
+    [SerializeField] private IntVariable plagueAmount;    
+    
+    [Header("Upgrades")]
+    [SerializeField] private IntVariable upgradeAmount;    
+    [SerializeField] private IntVariable downgradeAmount;    
+    
+    [Header("Buildings")]
+    [SerializeField] private IntVariable cannonAmount;    
+    [SerializeField] private IntVariable coilAmount;    
+    [SerializeField] private IntVariable mortarAmount;
+
+    [SerializeField] private int wave;
 
     [SerializeField] private List<Placeable> buildingInstances;
     [SerializeField] private GameObjectEvent addToShop;
     
     private void Start()
     {
-        RollNewWave();
+        RollNewWave(true);
     }
 
-    public void RollNewWave()
+    public void RollNewWave(bool roll)
     {
+        if (roll == false) return;
         rerollAvailable.Value = true;
         ReRollEnemies();
         ReRollBuildings();
         ReRollUpgrades();
+
+        wave++;
     }
 
     public void ReRollEnemies()
     {
-        foreach (RandomObjects randomObject in enemies)
-            randomObject.amount.Value = GetRandomNumberOfProgression(randomObject.maxAmount.Value);
+        ghostAmount.Value = Random.Range(0, Balancer.GetMaxGhostAmount(wave));
+        jackAmount.Value = Random.Range(0, Balancer.GetMaxJackAmount(wave));
+        zombieAmount.Value = Random.Range(0, Balancer.GetMaxZombieAmount(wave));
+        plagueAmount.Value = Random.Range(0, Balancer.GetMaxPlagueAmount(wave));
+
+        if (ghostAmount.Value + jackAmount.Value + zombieAmount.Value + plagueAmount.Value == 0) ghostAmount.Value = 1;
     }
 
     public void ReRollBuildings()
     {
-        foreach (RandomObjects randomObject in buildings)
-            randomObject.amount.Value = GetRandomNumberOfProgression(randomObject.maxAmount.Value);
-        
+        cannonAmount.Value = Random.Range(0, Balancer.GetMaxCannonAmount(wave));
+        coilAmount.Value = Random.Range(0, Balancer.GetMaxCoilAmount(wave));
+        mortarAmount.Value = Random.Range(0, Balancer.GetMaxMortarAmount(wave));
+
+        if (cannonAmount.Value + coilAmount.Value + mortarAmount.Value == 0) cannonAmount.Value = 1;
     }
 
     public void ReRollUpgrades()
     {
-        foreach (RandomObjects randomObject in upDownGrades)
-            randomObject.amount.Value = GetRandomNumberOfProgression(randomObject.maxAmount.Value);
-    }
-
-    private int GetRandomNumberOfProgression(int maxAmount)
-    {
-        return Random.Range(0, Mathf.RoundToInt(maxAmount * percentage));
+        upgradeAmount.Value = Random.Range(0, Balancer.GetMaxUpgradeAmount(wave));
+        downgradeAmount.Value = Random.Range(0, Balancer.GetMaxDowngradeAmount(wave));
     }
 
     public void ApplyWave()
     {
+        Shop shop = FindObjectOfType<Shop>();
         foreach (Placeable placeable in buildingInstances)
             for (int i = 0; i < placeable.amount.Value; i++)
+            {
+                shop.SetSprite(placeable.sprite);
                 addToShop.Raise(placeable.instance);
+            }
     }
     
     public void HealthChanged(int newHealth)
@@ -87,5 +104,6 @@ public class GameManager : MonoBehaviour
     {
         public IntVariable amount;
         public GameObject instance;
+        public Sprite sprite;
     }
 }

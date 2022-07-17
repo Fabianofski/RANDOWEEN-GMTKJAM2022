@@ -272,8 +272,8 @@ MonoBehaviour:
   beamLineRenderers:
   - {fileID: 3428873505100063703}
   - {fileID: 3428873504511664725}
-  radius: 5
-  damage: 5
+  radius: 6
+  damage: 10
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -383,8 +383,8 @@ MonoBehaviour:
   - {fileID: 3428873506043823225}
   - {fileID: 3428873504934162879}
   - {fileID: 3428873504247870153}
-  radius: 5
-  damage: 5
+  radius: 6
+  damage: 15
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64

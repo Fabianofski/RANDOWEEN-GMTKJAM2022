@@ -52,37 +52,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 9b9d2df94fdf15e449ee3a2c23dae3b2, type: 2}
   rerollAvailable: {fileID: 11400000, guid: feddb8313be436f45a5dbd0cbb392e78, type: 2}
-  buildings:
-  - amount: {fileID: 11400000, guid: 85ce8f452a7c5ed4f85ccf290961143e, type: 2}
-    maxAmount: {fileID: 11400000, guid: 8212be2c2263f63409c2b3b325606321, type: 2}
-  - amount: {fileID: 11400000, guid: 774c4ab42a46c134c91abd31f5ea9e91, type: 2}
-    maxAmount: {fileID: 11400000, guid: c19d632a711e345448e8f45aecf25364, type: 2}
-  - amount: {fileID: 11400000, guid: f749369b69a0d844e942bf3d865292f5, type: 2}
-    maxAmount: {fileID: 11400000, guid: 7f943ce8fcc786f438c53a59c4c3e191, type: 2}
-  enemies:
-  - amount: {fileID: 11400000, guid: 58380a916d8c5e848bf33519a2667415, type: 2}
-    maxAmount: {fileID: 11400000, guid: d78ad6886f00a7c469b4a590467a345e, type: 2}
-  - amount: {fileID: 11400000, guid: 6300e1d1acab66d4390f0d0dcaf9cdbb, type: 2}
-    maxAmount: {fileID: 11400000, guid: be6260f9799b26049a343eed08717527, type: 2}
-  - amount: {fileID: 11400000, guid: 6b1dbc2d76d2f674fa28e4d2826b3b3d, type: 2}
-    maxAmount: {fileID: 11400000, guid: 46e916b5580ff6145b23b730912c1c20, type: 2}
-  - amount: {fileID: 11400000, guid: 6e79e7f6a9cc86b41b606d2fb23ea355, type: 2}
-    maxAmount: {fileID: 11400000, guid: 4cd6635b504488c498d5e98fe85d9357, type: 2}
-  upDownGrades:
-  - amount: {fileID: 11400000, guid: 455f9ee4739b0a245a215b43cf02cc9d, type: 2}
-    maxAmount: {fileID: 11400000, guid: 6566befb8839c2248926229bcfa99512, type: 2}
-  - amount: {fileID: 11400000, guid: 178d8e7ffcad12645ba16a0dc694d665, type: 2}
-    maxAmount: {fileID: 11400000, guid: 033d8771242cb634eaef6a758474a5f9, type: 2}
-  upgrade: {fileID: 11400000, guid: 455f9ee4739b0a245a215b43cf02cc9d, type: 2}
-  downgrade: {fileID: 11400000, guid: 178d8e7ffcad12645ba16a0dc694d665, type: 2}
-  percentage: 1
+  ghostAmount: {fileID: 11400000, guid: 58380a916d8c5e848bf33519a2667415, type: 2}
+  jackAmount: {fileID: 11400000, guid: 6300e1d1acab66d4390f0d0dcaf9cdbb, type: 2}
+  zombieAmount: {fileID: 11400000, guid: 6e79e7f6a9cc86b41b606d2fb23ea355, type: 2}
+  plagueAmount: {fileID: 11400000, guid: 6b1dbc2d76d2f674fa28e4d2826b3b3d, type: 2}
+  upgradeAmount: {fileID: 11400000, guid: 455f9ee4739b0a245a215b43cf02cc9d, type: 2}
+  downgradeAmount: {fileID: 11400000, guid: 178d8e7ffcad12645ba16a0dc694d665, type: 2}
+  cannonAmount: {fileID: 11400000, guid: 85ce8f452a7c5ed4f85ccf290961143e, type: 2}
+  coilAmount: {fileID: 11400000, guid: 774c4ab42a46c134c91abd31f5ea9e91, type: 2}
+  mortarAmount: {fileID: 11400000, guid: f749369b69a0d844e942bf3d865292f5, type: 2}
+  wave: 1
   buildingInstances:
   - amount: {fileID: 11400000, guid: 85ce8f452a7c5ed4f85ccf290961143e, type: 2}
     instance: {fileID: 8139958155690381322, guid: 0b55779ed94837141b10b0c19f801c69, type: 3}
+    sprite: {fileID: 21300000, guid: 05fb96eedbe34ac4fab8438814736e08, type: 3}
   - amount: {fileID: 11400000, guid: 774c4ab42a46c134c91abd31f5ea9e91, type: 2}
     instance: {fileID: 2497566476427545805, guid: 1c8a6121b8a571343a0ecb2c606d73a6, type: 3}
+    sprite: {fileID: 21300000, guid: 3dad8355497f97842a37f378aaa2765d, type: 3}
   - amount: {fileID: 11400000, guid: f749369b69a0d844e942bf3d865292f5, type: 2}
     instance: {fileID: 8139958155690381322, guid: 0b55779ed94837141b10b0c19f801c69, type: 3}
+    sprite: {fileID: 21300000, guid: ef407437eceac44418d55cf20acd6633, type: 3}
   addToShop: {fileID: 11400000, guid: 7198cd930d48b6849824c9081d6ee2b6, type: 2}
 --- !u!114 &5902184584422692175
 MonoBehaviour:

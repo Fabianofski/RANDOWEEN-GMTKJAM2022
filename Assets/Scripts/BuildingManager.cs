@@ -84,8 +84,8 @@ public class BuildingManager : MonoBehaviour
 
     private void UpDowngradeBuilding()
     {
-        Vector3Int tilePos = new Vector3Int(Mathf.RoundToInt(worldMousePos.x), Mathf.RoundToInt(worldMousePos.y) - 1, 0);
-        Vector3 buildingPos = tilePos + new Vector3(0, 0.5f, 0);
+        Vector3Int tilePos = new Vector3Int(Mathf.RoundToInt(worldMousePos.x), Mathf.RoundToInt(worldMousePos.y), 0);
+        Vector3 buildingPos = tilePos;
 
         Collider2D building = Physics2D.OverlapCircle(buildingPos, .2f);
         if (building == null) return;

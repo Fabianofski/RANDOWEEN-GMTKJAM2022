@@ -38,6 +38,11 @@ public class WaveManager : MonoBehaviour
         enemiesToBeKilled = enemySpawner.QueueLength();
         enemySpawner.StartSpawningEnemies(3, .5f);
     }
+
+    public void NewCreatureSpawned()
+    {
+        enemiesToBeKilled++;
+    }
     
     public void Shuffle<T>(IList<T> list)
     {

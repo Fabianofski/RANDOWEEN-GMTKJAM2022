@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bf3a636a69447ba7a28c223d66206c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   playerHealth: {fileID: 11400000, guid: b507e89037b155042b80810386114f09, type: 2}
   health: 20
   healthBar: {fileID: 1610778595594245142, guid: 5883f76729aff8c4585522e71ca1892f, type: 3}
@@ -299,3 +299,5 @@ MonoBehaviour:
   lookRight: {fileID: 0}
   lookLeft: {fileID: 0}
   specialAttackTime: 5
+  hasSpecial: 0
+  spawnedCreature: {fileID: 11400000, guid: 98b969f4d0881044c94f1f8002cd3e10, type: 2}

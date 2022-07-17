@@ -102,6 +102,7 @@ namespace Enemy
             if (reachedEnd)
             {
                 playerHealth.Subtract(10);
+                enemyDied.Raise();
                 Destroy(gameObject);
                 return true;
             }

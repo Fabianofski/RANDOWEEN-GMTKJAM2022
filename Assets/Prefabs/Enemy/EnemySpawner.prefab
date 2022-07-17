@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3008321192322868446}
   - component: {fileID: 3008321192322868418}
   - component: {fileID: 8128389482621823480}
+  - component: {fileID: 665467458438872525}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -151,6 +152,46 @@ MonoBehaviour:
     _list: {fileID: 0}
     _collectionInstancer: {fileID: 0}
     _listInstancer: {fileID: 0}
+--- !u!114 &665467458438872525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3008321192322868441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3008321192322868445}
+        m_TargetAssemblyTypeName: WaveManager, Assembly-CSharp
+        m_MethodName: NewCreatureSpawned
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 98b969f4d0881044c94f1f8002cd3e10, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
 --- !u!1001 &1927707281273221454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3710723791876133572, guid: 372c2eef4de100c4997a853826708681, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3710723791876133572, guid: 372c2eef4de100c4997a853826708681, type: 3}
       propertyPath: m_LocalPosition.z

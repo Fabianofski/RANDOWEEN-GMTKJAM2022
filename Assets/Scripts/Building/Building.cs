@@ -10,5 +10,6 @@ namespace Building
         public void Downgrade();
         public void Enable();
         public void Disable();
+        public int GetLevel();
     }
 }

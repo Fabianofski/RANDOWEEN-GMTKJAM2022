@@ -288,9 +288,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b794f6cbf4a44a5ea3005b1e02885e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.75
   playerHealth: {fileID: 11400000, guid: b507e89037b155042b80810386114f09, type: 2}
-  health: 0
+  health: 200
   healthBar: {fileID: 1610778595594245142, guid: 5883f76729aff8c4585522e71ca1892f, type: 3}
   enemyDied: {fileID: 11400000, guid: ebd8ce3225c9877408673cb58af57229, type: 2}
   useAnimator: 1
