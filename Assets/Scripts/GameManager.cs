@@ -30,7 +30,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private IntVariable mortarAmount;
 
     [SerializeField] private int wave;
+    [SerializeField] private IntVariable waveVariable;
 
+    
     [SerializeField] private List<Placeable> buildingInstances;
     [SerializeField] private GameObjectEvent addToShop;
     
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
         ReRollBuildings();
         ReRollUpgrades();
 
+        waveVariable.Value = wave;
         wave++;
     }
 

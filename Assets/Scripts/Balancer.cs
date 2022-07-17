@@ -1,7 +1,17 @@
-﻿using UnityEditor.Experimental.GraphView;
-
+﻿
 public static class Balancer
 {
+
+    public static float GetSpawnRate(int wave)
+    {
+        switch (wave)
+        {
+            case 1: return 3;
+            case 2: return 2.5f;
+            case 3: return 2f;
+            default: return 1.5f;
+        }
+    }
 
     #region Enemies
     public static int GetMaxGhostAmount(int wave)

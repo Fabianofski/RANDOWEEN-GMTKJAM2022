@@ -62,6 +62,7 @@ MonoBehaviour:
   coilAmount: {fileID: 11400000, guid: 774c4ab42a46c134c91abd31f5ea9e91, type: 2}
   mortarAmount: {fileID: 11400000, guid: f749369b69a0d844e942bf3d865292f5, type: 2}
   wave: 1
+  waveVariable: {fileID: 11400000, guid: fb0e7eb6187c39c45870701d1b72af0b, type: 2}
   buildingInstances:
   - amount: {fileID: 11400000, guid: 85ce8f452a7c5ed4f85ccf290961143e, type: 2}
     instance: {fileID: 8139958155690381322, guid: 0b55779ed94837141b10b0c19f801c69, type: 3}
@@ -70,7 +71,7 @@ MonoBehaviour:
     instance: {fileID: 2497566476427545805, guid: 1c8a6121b8a571343a0ecb2c606d73a6, type: 3}
     sprite: {fileID: 21300000, guid: 3dad8355497f97842a37f378aaa2765d, type: 3}
   - amount: {fileID: 11400000, guid: f749369b69a0d844e942bf3d865292f5, type: 2}
-    instance: {fileID: 8139958155690381322, guid: 0b55779ed94837141b10b0c19f801c69, type: 3}
+    instance: {fileID: 8139958155690381322, guid: 1b5ec6f33ed867f48bfa3b9f2cda2da3, type: 3}
     sprite: {fileID: 21300000, guid: ef407437eceac44418d55cf20acd6633, type: 3}
   addToShop: {fileID: 11400000, guid: 7198cd930d48b6849824c9081d6ee2b6, type: 2}
 --- !u!114 &5902184584422692175

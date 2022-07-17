@@ -53,12 +53,17 @@ MonoBehaviour:
   enemies:
   - amount: {fileID: 11400000, guid: 58380a916d8c5e848bf33519a2667415, type: 2}
     instance: {fileID: 1307306908918312535, guid: 8134994e4d602ea41b649b1487bc4234, type: 3}
+    sprite: {fileID: 0}
   - amount: {fileID: 11400000, guid: 6300e1d1acab66d4390f0d0dcaf9cdbb, type: 2}
     instance: {fileID: 1999458639224970987, guid: abd29f58b3ba7b540906c5e4decd4668, type: 3}
+    sprite: {fileID: 0}
   - amount: {fileID: 11400000, guid: 6b1dbc2d76d2f674fa28e4d2826b3b3d, type: 2}
     instance: {fileID: 4464174423745423594, guid: dcf551321dbbe544fa4da5f9c63aeb3c, type: 3}
+    sprite: {fileID: 0}
   - amount: {fileID: 11400000, guid: 6e79e7f6a9cc86b41b606d2fb23ea355, type: 2}
     instance: {fileID: 1502069001906624666, guid: 10ea18c733d7b674884beb72f76d93ed, type: 3}
+    sprite: {fileID: 0}
+  wave: {fileID: 11400000, guid: fb0e7eb6187c39c45870701d1b72af0b, type: 2}
 --- !u!114 &3008321192322868446
 MonoBehaviour:
   m_ObjectHideFlags: 0
