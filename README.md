@@ -1,8 +1,5 @@
 # GMTK-JAM-2022
  
-![Twitter Follow](https://img.shields.io/twitter/follow/F4B1_GameDev?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/santumerino?style=social)
- 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -33,7 +30,7 @@ To open the project do the following:
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
