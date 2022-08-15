@@ -27,11 +27,6 @@ To open the project do the following:
    ```
 4. Open the Project in Unity Hub
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
